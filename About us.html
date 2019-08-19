@@ -56,6 +56,36 @@
   #Info{
     padding-left: 10px;
   }
+
+  * {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  border-style: solid;
+  border-width: 3px;
+  border-color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h2{
+color:black;
+}
+
+p{
+color: white;
+}
   </style>
     </head>
       <body>
@@ -90,6 +120,23 @@
         </p>
 
     </Div>
+
+    <div class="row">
+  <div class="column" style="background-color:#A1D8AB;">
+    <h2>Korto</h2>
+    <p>This is a person that is cool.</p>
+  </div>
+  <div class="column" style="background-color:#A1D8AB;">
+    <h2>Autumn</h2>
+    <p>This is another person who is also cool!</p>
+  </div>
+  <div class="column" style="background-color:#A1D8AB;">
+    <h2>Gabi</h2>
+    <p>Gabi lives in East Hanover, NJ ann has liver there her whole life.
+    She plays basketball, softball, violin, and piano. On her free time she loves to draw and read and loves to
+    </p>
+  </div>
+</div>
     <div class="footer">
       <p>©️S.T.E.A.M Spectrum</p>
     </div>
