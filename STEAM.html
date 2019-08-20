@@ -51,8 +51,10 @@
   }
 
   img.two {
-  height: 100%;
-  width: 100%;
+  height: 50%;
+  width: 50%;
+  padding-top: 20px;
+  margin-left: 350px;
   }
   .footer {
      left: 0;
@@ -63,6 +65,106 @@
      text-align: center;
   }
 
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 500px;
+    height: 450px;
+    padding: 30px;
+    border: 5px dotted #79BBDC;
+    margin-left: 100px;
+
+
+
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  p{
+  font-family: Georgia;
+  font-size: 35px;
+  }
+
+  h2{
+  font-family: Georgia;
+  text-align: center;
+  }
+
+  .slogan {
+    background-color: white;
+    font-size: 30px;
+    font-weight:400 ;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-weight: 600;
+
+
+  }
+
+
+.STEAM{
+   background-color: white;
+    width: 250px;
+    font-weight:300 ;
+
+
+  }
+
+  body {
+    font-family: Georgia;
+  }
+
+  .flip-box {
+    background-color: transparent;
+    width: 350px;
+    height: 250px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-right: 20px;
+  }
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-front {
+    background-color: #79BBDC;
+    color: white;
+  }
+
+  .flip-box-back {
+    background-color: #79BBDC;
+    color: white;
+    transform: rotateY(180deg);
+  }
 
   </style>
 
@@ -87,16 +189,45 @@
 
     <img src="STEAM SPECTRUM.jpg" alt="STEAM Spectrum"; class="two"; class="center">
 
-    <div style="padding:20px;margin-top:30px;background-color:#FFFFFF;height:600px;">
 
-  
 
-    <center><h2>When the information gets too much,play our fun trivia game, FunFormation. Click the tab above in the navigtion bar.</h2></center>
 
+<div class="row">
+  <div class="column" style="background-color: white;">
+
+ <div class="STEAM">
+		<p style= "color:blue">Science</p>
+        <p style= "color: #EEDD45">Technology</p>
+        <p style= "color: red">Engineering</p>
+        <p style= "color:blue">Art</p>
+        <p style= "color: #EEDD45">Math</p>
+</div>
+  </div>
+
+  <div class="column" style="background-color:white;">
+<div class="slogan">
+"Let's Shout and Scream <br> and take part in STEAM!"
+</div>
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2 style= "padding: 60px; font-weight: 300; font-size: 30px;">FunFormation Game</h2>
     </div>
+    <div class="flip-box-back">
+      <h2 style="font-size:20px; padding-top: 50px; font-weight: 200; line-height: 1.5;">When the information gets too much, play our FunFormation game.<br>
+		Click the tab above in the navigation bar.</h2>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+
     <div class="footer">
-      <p>©️S.T.E.A.M Spectrum</p>
+      <p style="font-size:10px;">©️S.T.E.A.M Spectrum</p>
     </div>
+
 
   </body>
 </html>
